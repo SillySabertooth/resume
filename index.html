@@ -9,20 +9,25 @@
             font-family: arial;
         }
         .photo {
-            float: left;
+        	float: left;
             object-fit: cover;
             border-radius: 50%;
             width: 150px;
             height: 150px;
-            margin-right: 12px;
-            margin-bottom: 12px;
-            margin-left: 120px
+            
         }
-        .info::after {
-            content: '';
-            display: table;
-            clear: both;
+        .container {
+   			text-align: center;
+           
+            
+		}
+        .item {
+            display: inline-block;
+            height: 150px;
+            vertical-align:bottom;
+            
         }
+     
         .list-label {
             font-weight: bold;
         }
@@ -72,21 +77,24 @@
 <body>
     <main>
         <h1>Магистерская работа Ермакович Д. П.</h1>
-        <section class="info">
+        <section>
             <h4>Curriculum Vitae</h4>
             <h3>Донат Ермакович</h3>
-            <img src="./avatar.jpg" alt="Фотография Иванова И. И." class="photo">
-            <p><li>
-                <I> г. Минск, Республика Беларусь; </I>
-            </li>
-            <br>
-            <li>
-                <I> Телефон: +375 29 367 05 38 </I>
-            </li>
-            <br>
-            <li>
-                <I> E-mail: danatyermakovich@gmail.com </I>
-            </li> </p>   
+            <div class="container">
+    				<div class="item" style=";height:150px;"><img src="./avatar.jpg" alt="Фотография Иванова И. И." class="photo"></div>
+    				<div class="item" style="height:150px;float: center;">
+                    <ul style = "text-align:left;"><li> 
+                    	<a>г. Минск, Республика Беларусь; </a>
+                    </li>
+                    <br>
+                    <li>
+                      	<a>Телефон: +375 29 367 05 38; </a>
+                    </li>
+                        <br>
+                        <li>
+                <I>E-mail: danatyermakovich@gmail.com; </I>
+            </li> </ul></div>
+</div>
         </section>
         
      	<table>
